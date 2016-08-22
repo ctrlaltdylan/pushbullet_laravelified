@@ -1,0 +1,19 @@
+{
+    "name": "crtlaltdylan/pushbullet_laravelified",
+    "description": "A Laravel Service Provider and Facade for wrapping the Pushbullet PHP Client",
+    "authors": [
+        {
+            "name": "Dylan Pierce",
+            "email": "me@dylanjpierce.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4": {
+            "PierceTech\\Pushbullet\\" : "src/"
+        }
+    },
+    "require": {
+        "ivkos/pushbullet": "^3.3",
+        "illuminate/support": "^5.2"
+    }
+}
