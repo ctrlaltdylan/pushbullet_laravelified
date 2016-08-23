@@ -8,7 +8,7 @@ class Pushbullet {
     /**
      * @var Pushbullet
      */
-    private $pushbullet;
+    protected $pushbullet;
 
     /**
      * Constructor
@@ -28,7 +28,6 @@ class Pushbullet {
      */
     public function allDevices()
     {
-        die(var_dump($this->pushbullet));
         return $this->pushbullet->allDevices();
     }
 }
