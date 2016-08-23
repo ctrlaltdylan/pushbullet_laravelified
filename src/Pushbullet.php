@@ -6,6 +6,16 @@ use Pushbullet\Pushbullet as PushbulletClient;
 class Pushbullet {
 
     /**
+     * @var Pushbullet
+     */
+    private $pushbullet;
+
+    /**
+     * @var string
+     */
+    private $accessToken;
+
+    /**
      * Constructor
      *
      * @param string
