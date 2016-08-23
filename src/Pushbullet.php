@@ -28,6 +28,7 @@ class Pushbullet {
      */
     public function allDevices()
     {
+        die(var_dump($this->pushbullet));
         return $this->pushbullet->allDevices();
     }
 }
