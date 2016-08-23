@@ -11,20 +11,14 @@ class Pushbullet {
     private $pushbullet;
 
     /**
-     * @var string
-     */
-    private $accessToken;
-
-    /**
      * Constructor
      *
      * @param string
      * @return void
      */
-    public function __constructor($accessToken)
+    public function __constructor(PushbulletClient $pushbullet)
     {
-        $this->accessToken = $accessToken;
-        $this->pushbullet = new PushBulletClient($accessToken);
+        $this->pushbullet = $pushbullet;
     }
 
     /**
