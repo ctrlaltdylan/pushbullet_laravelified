@@ -4,7 +4,7 @@ namespace PierceTech\Pushbullet;
 use Illuminate\Support\Facades\Facade;
 
 class PushbulletFacade extends Facade {
-    
+
     /**
      * Get the binding in the IoC container
      *
@@ -12,6 +12,6 @@ class PushbulletFacade extends Facade {
      */
     protected static function getFacadeAccessor()
     {
-        return 'Pushbullet';
+        return 'pushbulleteer';
     }
 }
