@@ -16,7 +16,7 @@ class Pushbullet {
      * @param string
      * @return void
      */
-    public function __constructor(PushbulletClient $pushbullet)
+    public function __construct(PushbulletClient $pushbullet)
     {
         $this->pushbullet = $pushbullet;
     }
@@ -29,5 +29,17 @@ class Pushbullet {
     public function allDevices()
     {
         return $this->pushbullet->allDevices();
+    }
+
+    /**
+     * Set the Pushbullet Client
+     * 
+     * @param PushbulletClient $pushbullet [description]
+     */
+    public function setPushbullet(PushbulletClient $pushbullet)
+    {
+        $this->pushbullet = $pushbullet;
+
+        return $this;
     }
 }
